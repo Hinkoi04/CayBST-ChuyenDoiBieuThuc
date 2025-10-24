@@ -1,16 +1,25 @@
-#include<iostream>
+#include <iostream>
 #include <string>
-#include <Windows.h>
+
+#ifdef _WIN32
+    #include <Windows.h>
+#else
+    #include <unistd.h>
+    #include <cstdio>
+#endif
 using namespace std;
+
 struct TreeNode {
-	char value;
-	string x;
-	TreeNode* left;
-	TreeNode* right;
+    char value;
+    string x;
+    TreeNode* left;
+    TreeNode* right;
 };
 typedef TreeNode* Node;
+
 Node tao_Node(char x);
 Node tao_NodeSo(string x);
+
 void gotoxy(short x, short y);
 bool kiemTraKiTu(char x);
 bool kiemTraToanTu(char x);
