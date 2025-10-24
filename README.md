@@ -1,53 +1,41 @@
-# 📘 Cây BST & Chuyển đổi Biểu thức (Trung tố → Hậu tố / Tiền tố)
+# 🌳 CayBST – Chuyển đổi Biểu thức Trung tố ↔ Hậu tố / Tiền tố
+
+[![Language](https://img.shields.io/badge/language-C%2B%2B-blue)](https://en.wikipedia.org/wiki/C%2B%2B)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/Hinkoi04/CayBST-ChuyenDoiBieuThuc?style=social)](https://github.com/Hinkoi04/CayBST-ChuyenDoiBieuThuc/stargazers)
+
+---
 
 ## 🧩 Giới thiệu
-Đây là bài tập lập trình mô phỏng **cấu trúc dữ liệu cây nhị phân tìm kiếm (BST)** kết hợp với **chuyển đổi và xử lý biểu thức toán học** từ **dạng trung tố (infix)** sang **dạng hậu tố (postfix)** và **tiền tố (prefix)**.
+Dự án mô phỏng **cấu trúc dữ liệu cây nhị phân tìm kiếm (BST)** và quá trình **chuyển đổi biểu thức toán học**:
+- Trung tố → Hậu tố  
+- Trung tố → Tiền tố  
 
-Ứng dụng được viết bằng ngôn ngữ **C/C++**, giúp người học:
-- Hiểu rõ cơ chế **duyệt cây nhị phân** (trung thứ tự, tiền thứ tự, hậu thứ tự).
-- Rèn luyện kỹ năng **chuyển đổi biểu thức** dùng **ngăn xếp (stack)**.
-- Thực hành xử lý **biểu thức toán học phức tạp** bằng thuật toán.
-
----
-
-## ⚙️ Tính năng chính
-1. **Tạo cây nhị phân (BST)** từ dữ liệu nhập vào.  
-2. **Chuyển đổi biểu thức:**
-   - Trung tố → Hậu tố  
-   - Trung tố → Tiền tố  
-3. **Tính giá trị biểu thức** hậu tố hoặc tiền tố.  
-4. **Hiển thị cây biểu thức** (in-order, pre-order, post-order).  
-5. **Xuất kết quả ra màn hình hoặc file**.
+Ứng dụng được viết bằng **C++ (Visual Studio 2022)** nhằm hỗ trợ học tập và ôn luyện môn **Cấu trúc dữ liệu & Giải thuật** tại **Đại học Công Nghệ Sài Gòn (STU)**.
 
 ---
 
-## 🧠 Thuật toán sử dụng
-- **Stack** để xử lý thứ tự toán tử và ngoặc.  
-- **Đệ quy** trong việc duyệt cây và tính giá trị.  
-- **Cây nhị phân** để biểu diễn cấu trúc biểu thức toán học.  
-
----
-
-
-## ▶️ Cách chạy chương trình
-**1. Biên dịch (compile):**
-```bash
-g++ src/main.cpp src/bst.cpp src/expression.cpp -o CayBST
+## ⚙️ Cấu trúc thư mục
 ```
-
-**2. Chạy chương trình:**
-```bash
-./CayBST
-```
-
-**3. Hoặc trên Windows:**
-```bash
-CayBST.exe
+CayBST-ChuyenDoiBieuThuc/
+├── DoAnTinHoc_2024/      # Mã nguồn chính (.cpp, .h)
+├── DoAnTinHoc_2024.sln   # File solution Visual Studio
+├── LICENSE                # Giấy phép MIT
+└── README.md              # Mô tả dự án
 ```
 
 ---
 
-## 📥 Ví dụ biểu thức
+## 🚀 Hướng dẫn chạy
+1. Mở **Visual Studio 2022**
+2. Chọn `File → Open → Project/Solution`
+3. Mở file `DoAnTinHoc_2024.sln`
+4. Chọn cấu hình **Debug** hoặc **Release**
+5. Nhấn **F5** để biên dịch và chạy chương trình
+
+---
+
+## 📖 Ví dụ biểu thức
 ```
 Nhập biểu thức trung tố: (A+B)*(C-D)
 Hậu tố: AB+CD-*
@@ -57,15 +45,38 @@ Giá trị (nếu có A=5, B=2, C=8, D=3): 35
 
 ---
 
-## 📚 Tác giả
-- **Tên:** Đỗ Văn Hin  
-- **Trường:** Đại học Công Nghệ Sài Gòn (STU)  
-- **Môn học:** Cấu trúc dữ liệu & Giải thuật  
-- **GVHD:** (điền tên giảng viên nếu có)
+## 🧠 Thuật toán sử dụng
+- **Stack (Ngăn xếp)**: Dùng để xác định thứ tự toán tử và ngoặc khi chuyển đổi.  
+- **Đệ quy**: Dùng để duyệt và tính toán giá trị biểu thức.  
+- **Cây nhị phân (Binary Tree)**: Biểu diễn cấu trúc của biểu thức toán học.
 
 ---
 
-## 💡 Gợi ý mở rộng
-- Thêm tính năng nhập biểu thức từ file.
-- Vẽ cây biểu thức bằng ASCII hoặc thư viện đồ họa.
-- Tính toán giá trị trực tiếp với số thực.
+## 📸 Hình minh họa (gợi ý)
+> Có thể chụp ảnh kết quả chương trình hiển thị cây biểu thức và thêm vào thư mục `/images` để minh họa trực quan hơn.
+
+---
+
+## 💡 Mở rộng
+- Cho phép nhập biểu thức từ file.  
+- Tính toán với số thực (float).  
+- Vẽ cây biểu thức bằng đồ họa ASCII hoặc SFML.  
+- Xuất biểu thức dưới dạng LaTeX.
+
+---
+
+## 📚 Tác giả
+- **Tên:** Đỗ Văn Hin  
+- **Trường:** Đại học Công Nghệ Sài Gòn (STU)  
+- **Khóa:** 2021–2025  
+- **Môn học:** Cấu trúc dữ liệu & Giải thuật  
+- **GVHD:** (Điền tên giảng viên hướng dẫn nếu có)
+
+---
+
+## 📜 Giấy phép
+Dự án này được phát hành dưới giấy phép **MIT License** – bạn có thể xem chi tiết trong file [LICENSE](LICENSE).
+
+---
+
+⭐ Nếu bạn thấy project này hữu ích, hãy **nhấn Star** trên GitHub để ủng hộ tác giả nhé!
