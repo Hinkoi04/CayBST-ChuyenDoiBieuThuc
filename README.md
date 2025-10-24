@@ -28,26 +28,6 @@
 
 ---
 
-## 🗂️ Cấu trúc thư mục (gợi ý)
-```
-CayBST-ChuyenDoiBieuThuc/
-│
-├── src/
-│   ├── main.cpp
-│   ├── bst.cpp
-│   ├── bst.h
-│   ├── expression.cpp
-│   └── expression.h
-│
-├── data/
-│   └── input.txt
-│
-├── README.md
-└── output/
-    └── result.txt
-```
-
----
 
 ## ▶️ Cách chạy chương trình
 **1. Biên dịch (compile):**
