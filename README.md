@@ -27,37 +27,52 @@ CayBST-ChuyenDoiBieuThuc/
 ---
 
 ## 🚀 Hướng dẫn chạy
-1. Mở **Visual Studio 2022**
-2. Chọn `File → Open → Project/Solution`
-3. Mở file `DoAnTinHoc_2024.sln`
-4. Chọn cấu hình **Debug** hoặc **Release**
-5. Nhấn **F5** để biên dịch và chạy chương trình
+⚙️ 1️⃣ Mở Codespace
 
----
+Truy cập repository trên GitHub của bạn.
 
-## 📖 Ví dụ biểu thức
-```
-Nhập biểu thức trung tố: (A+B)*(C-D)
-Hậu tố: AB+CD-*
-Tiền tố: *+AB-CD
-Giá trị (nếu có A=5, B=2, C=8, D=3): 35
-```
+Nhấn nút “Code → Open with Codespaces → New codespace”.
 
----
+Chờ vài phút để GitHub tự khởi tạo môi trường Ubuntu (Linux).
+
+🧩 2️⃣ Cấu trúc project
+
+Bên trong Codespaces, project của bạn có cấu trúc:
+
+/workspaces/CayBST-ChuyenDoiBieuThuc/
+│
+├── DoAnTinHoc_2024/
+│   ├── Main.cpp
+│   ├── Source.cpp
+│   ├── Header.h
+│
+├── DoAnTinHoc_2024.sln
+├── README.md
+└── LICENSE
+
+🚀 3️⃣ Biên dịch chương trình
+
+Mở Terminal trong Codespaces (Ctrl + ~) và gõ lệnh:
+
+g++ DoAnTinHoc_2024/Main.cpp DoAnTinHoc_2024/Source.cpp -o CayBST
+
+
+✅ Nếu không có lỗi, Codespaces sẽ tạo ra file thực thi CayBST trong thư mục hiện tại.
+
+▶️ 4️⃣ Chạy chương trình
+
+Sau khi biên dịch xong, chạy chương trình bằng lệnh:
+
+./CayBST
 
 ## 🧠 Thuật toán sử dụng
-- **Stack (Ngăn xếp)**: Dùng để xác định thứ tự toán tử và ngoặc khi chuyển đổi.  
 - **Đệ quy**: Dùng để duyệt và tính toán giá trị biểu thức.  
 - **Cây nhị phân (Binary Tree)**: Biểu diễn cấu trúc của biểu thức toán học.
 
 ---
 
-## 📸 Hình minh họa (gợi ý)
-> Có thể chụp ảnh kết quả chương trình hiển thị cây biểu thức và thêm vào thư mục `/images` để minh họa trực quan hơn.
 
----
-
-## 💡 Mở rộng
+## 💡 Mở rộng (Chưa có)
 - Cho phép nhập biểu thức từ file.  
 - Tính toán với số thực (float).  
 - Vẽ cây biểu thức bằng đồ họa ASCII hoặc SFML.  
@@ -65,18 +80,7 @@ Giá trị (nếu có A=5, B=2, C=8, D=3): 35
 
 ---
 
-## 📚 Tác giả
-- **Tên:** Đỗ Văn Hin  
-- **Trường:** Đại học Công Nghệ Sài Gòn (STU)  
-- **Khóa:** 2021–2025  
-- **Môn học:** Cấu trúc dữ liệu & Giải thuật  
-- **GVHD:** (Điền tên giảng viên hướng dẫn nếu có)
 
----
 
-## 📜 Giấy phép
-Dự án này được phát hành dưới giấy phép **MIT License** – bạn có thể xem chi tiết trong file [LICENSE](LICENSE).
-
----
 
 ⭐ Nếu bạn thấy project này hữu ích, hãy **nhấn Star** trên GitHub để ủng hộ tác giả nhé!
